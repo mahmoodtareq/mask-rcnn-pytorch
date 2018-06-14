@@ -1,7 +1,7 @@
 from backbones.resnet_fpn import ResNetFPN
 from backbones.resnet import ResNet
-from heads.cls_bbox import ClsBBoxHead_fc as ClsBBoxHead
-from heads.mask import MaskHead
+from heads.cls_bbox_fpn import ClsBBoxHead_fc as ClsBBoxHead
+from heads.mask_fpn import MaskHead
 from tools.detect_utils import calc_iou, bbox_corner2center, bbox_center2corner
 from proposal.rpn import RPN
 from pooling.roi_align import RoiAlign
